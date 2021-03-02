@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>Mamedov Volodymyr</title>
+	<link rel="stylesheet" href="css/index.css?v=1.0">
+	<script type="text/javascript" src="js/index.js"></script>.
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<main>
+		<div id="mySidenav" class="sidenav-container">
+			<span class="drawer-close-button">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			</span>
+			<header id="title">
+				<h1>Mamedov Volodymyr</h1>
+			</header>
+			<a href="#home" onclick="closeNav()" id="home">Home</a>
+			<a href="about.html">About me</a>
+			<a href="skills.html">Skills</a>
+			<a href="experience.html">Experience & Projects</a>
+			<a href="education.html">Education & Cerifications</a>
+			<a href="#contact">Contact</a>
+		</div>
+
+		<div class="backdrop-container" id="backdrop"></div>
+
+		<nav>
+			<span onclick="openNav()" class="mobile-nav-open-icon">&#9776;</span>
+		</nav>
+
+		{% block content %}
+        {% endblock %}
+
+		<section id="contact">
+			<header>
+				<h2>Contact</h2>
+			</header>
+
+			<div id="icons" class="flex-container">
+				<div><a href="mailto:mamedovvolodymyr@gmail.com">
+					<i class="material-icons">email</i></a></div>
+				<div><a target="blank" href="https://github.com/RideTheSkyP/">
+					<img src="icons/GitHub120px.png" height="24" alt="github"></a></div>
+				<div><a target="blank" href="https://www.linkedin.com/in/volodymyr-mamedov/">
+					<img src="icons/LinkedIn.svg" height="24" alt="linkedin"></a></div>
+			</div>
+		</section>
+		
+		<footer id="main-footer">
+			<small>
+				© Copyright 2021 Mamedov Volodymyr
+			</small>
+		</footer>
+	</main>
+</body>
+</html>
