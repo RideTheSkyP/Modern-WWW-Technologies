@@ -3,8 +3,9 @@
 <html lang="en">
 <head>
 	<title>About me</title>
-	<link rel="stylesheet" href="index.css?v=1.0">
-	<script type="text/javascript" src="index.js"></script>.
+	<link rel="stylesheet" href="css/index.css?v=1.0">
+	<link rel="stylesheet" href="css/sidenav.css?v=1.0">
+	<script type="text/javascript" src="js/index.js"></script>.
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<meta charset="utf-8">
@@ -12,14 +13,142 @@
 </head>
 
 <body>
-<h3>Languages</h3>
-	<div id="languages">
-		<ul>
-			<li>Polish - Fluent(C1)</li>
-			<li>English - Proficient(B2-C1)</li>
-			<li>German - Beginner(&ltA1)</li>
-			<li>Ukranian - Native</li>
-			<li>Russian - Native</li>
-		</ul>
+	<div id="mySidenav" class="sidenav-container">
+		<span class="drawer-close-button">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		</span>
+		<p>Mamedov Volodymyr</p>
+		<a href="base.html" id="home">Home</a>
+		<a href="about.html">About me</a>
+		<a href="skills.html">Skills</a>
+		<a href="experience.html">Experience & Projects</a>
+		<a href="education.html">Education & Cerifications</a>
+		<a href="#contact" onclick="closeNav()">Contact</a>
 	</div>
+
+	<div class="backdrop-container" id="backdrop"></div>
+
+	<nav>
+		<span onclick="openNav()" class="mobile-nav-open-icon">&#9776;</span>
+	</nav>
+
+	<main>
+		<h3>Education</h3>
+		<div id="education">
+			<p> Now I'm studying at <a href="http://pwr.edu.pl/en/">Wroclaw University of Science and Technology</a> at 3<sup>rd</sup> year, the Faculty of Fundamental Problems of Technology, department of Computer Science.</p>
+		</div>
+		<h4>Currently studying this courses:</h4>
+		<div id="coursesNow">
+			<ul>
+				<li>Embedded Systems</li>
+				<li>Modern WWW Technologies</li>
+				<li>Mobile Applications</li>
+				<li>Reliable IT Systems</li>
+				<li>Computer Graphics</li>
+				<li>Concurrent Programming</li>
+			</ul>
+		</div>
+
+		<h4>Already passed:</h4>
+		<div id="coursesPassed">
+			<h5>5<sup>th</sup> semestr:</h5>
+			<div id="5th">
+				<ul>
+					<li>Team Programming</li>
+					<li>Scientific Computing</li>
+					<li>Cybersecurity</li>
+					<li>Information Theory</li>
+					<li>Developer Environment</li>
+				</ul>
+			</div>
+
+			<h5>4<sup>th</sup> semestr:</h5>
+			<div id="4th">
+				<ul>
+					<li>Algorithms and Data Structures</li>
+					<li>Network Technology</li>
+					<li>Python</li>
+					<li>Programming in Logic (Prolog)</li>
+					<li>Introduction to Graph Theory</li>
+					<li>Social Communication</li>
+					<li>Entrepreneurship</li>
+				</ul>
+			</div>
+
+			<h5>3<sup>th</sup> semestr:</h5>
+			<div id="3rd">
+				<ul>
+					<li>Databases</li>
+					<li>Programming Technology</li>
+					<li>Probabilistic Methods and Statistics</li>
+					<li>Architecture of Computers and Operating Systems</li>
+				</ul>
+			</div>
+
+			<h5>2<sup>th</sup> semestr:</h5>
+			<div id="2nd">
+				<ul>
+					<li>Discrete Mathematics</li>
+					<li>Mathematical Analysis 2</li>
+					<li>Legal Problems of Computer Science</li>
+					<li>Physics</li>
+					<li>Abstract Algebra and Coding</li>
+					<li>Programming Course</li>
+				</ul>
+			</div>
+
+			<h5>1<sup>th</sup> semestr:</h5>
+			<div id="1st">
+				<ul>
+					<li>Introduction to Computer Science and Programming</li>
+					<li>Algebra with analytical geometry</li>
+					<li>Mathematical Analysis 1</li>
+					<li>Logic and Formal Structures</li>
+				</ul>
+			</div>
+		</div>
+
+		<h3>Certifications</h3>
+		<div id="certifications">
+			<h5>Coursera:</h5>
+			<ul>
+				<li><a href="https://www.coursera.org/account/accomplishments/verify/XPAF5Y28LP8N">Crash Course on Python</a></li>
+			</ul>
+			<h5>Dataquest.io:</h5>
+			<ul>
+				<li><a href="https://app.dataquest.io/view_cert/3ABKCFW051O4UUMPKIB1/">Deep Learning Fundamentals Course</a></li>
+				<li><a href="https://app.dataquest.io/view_cert/Y4UWY2FNW28LE40I2MW2/">Exploratory Data Visualization</a></li>
+				<li><a href="https://app.dataquest.io/view_cert/UGRWEUIH9EGH125BHYAQ/">Machine Learning Fundamentals Course</a></li>
+				<li><a href="https://app.dataquest.io/view_cert/JOQ1QWPH6HC6PIJ7NUH5/">Statistics Fundamentals</a></li>
+			</ul>
+		</div>
+
+		<h3>Languages</h3>
+		<div id="languages">
+			<ul>
+				<li>Polish - Fluent(C1)</li>
+				<li>English - Proficient(B2-C1)</li>
+				<li>German - Beginner(&ltA1)</li>
+				<li>Ukranian - Native</li>
+				<li>Russian - Native</li>
+			</ul>
+		</div>
+	</main>
+
+	<footer id="main-footer">
+		<section id="contact">
+			<h4>Contact</h4>
+			<div id="icons" class="flex-container">
+				<div><a href="mailto:mamedovvolodymyr@gmail.com">
+					<i class="material-icons">email</i></a></div>
+				<div><a target="_blank" href="https://github.com/RideTheSkyP/">
+					<img src="icons/GitHub120px.png" height="24" alt="github"></a></div>
+				<div><a target="_blank" href="https://www.linkedin.com/in/volodymyr-mamedov/">
+					<img src="icons/LinkedIn.svg" height="24" alt="linkedin"></a></div>
+			</div>
+		</section>
+		<small>
+			© Copyright 2021 Mamedov Volodymyr
+		</small>
+	</footer>
 </body>

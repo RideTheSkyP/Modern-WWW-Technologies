@@ -3,8 +3,9 @@
 <html lang="en">
 <head>
 	<title>About me</title>
-	<link rel="stylesheet" href="index.css?v=1.0">
-	<script type="text/javascript" src="index.js"></script>.
+	<link rel="stylesheet" href="css/index.css?v=1.0">
+	<link rel="stylesheet" href="css/sidenav.css?v=1.0">
+	<script type="text/javascript" src="js/index.js"></script>.
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<meta charset="utf-8">
@@ -12,36 +13,69 @@
 </head>
 
 <body>
-<section id="experience">
-	<header>
-		<h2>Experience & Projects</h2>
-	</header>
-	<ul>
-		<li>
-			<p>
-				
-			</p>
-		</li>
-		<li>
-			<p>
-				
-			</p>
-		</li>
-		<li>
-			<p>
-				
-			</p>
-		</li>
-		<li>
-			<p>
-				
-			</p>
-		</li>
-		<li>
-			<p>
-				
-			</p>
-		</li>
-	</ul>
-	</section>
+	<div id="mySidenav" class="sidenav-container">
+		<span class="drawer-close-button">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		</span>
+		<p>Mamedov Volodymyr</p>
+		<a href="base.html" id="home">Home</a>
+		<a href="about.html">About me</a>
+		<a href="skills.html">Skills</a>
+		<a href="experience.html">Experience & Projects</a>
+		<a href="education.html">Education & Cerifications</a>
+		<a href="#contact" onclick="closeNav()">Contact</a>
+	</div>
+
+	<div class="backdrop-container" id="backdrop"></div>
+
+	<nav>
+		<span onclick="openNav()" class="mobile-nav-open-icon">&#9776;</span>
+	</nav>
+
+	<main>
+		<section id="experience">
+			<header>
+				<h2>Experience & Projects</h2>
+			</header>
+			<ul>
+				<li>
+					<p>
+						<b><a href="https://github.com/RideTheSkyP/Discord-DreamBot">Discord-DreamBot</a>:</b> Music bot for discord, implemented with asynchronous discord python API. For this project I used video/audio codec ffmpeg for video-to-audio transformation in best quality. Bot is deployed and hosted on heroku server. Also created MySQL database to store users playlists, hosted on heroku too.
+					</p>
+				</li>
+				<li>
+					<p>
+						<b><a href="https://github.com/RideTheSkyP/Pneumonia-Detect">Pneumonia-Detector app</a>:</b> Team project. GUI application for pneumonia recognition by chest x-ray images using machine learning. The following technologies used for this app: Keras+TensorFlow for different models designs (chosen were 5 top scored models to achieve the best possible and true result, models trained and tested in Google Colab), Pillow+OpenCV for image recognition, NumPy for image-to-matrix transformations, h5py to store all matrices with labels taking up as little space as possible, Matplotlib+Seaborn to show accuracy and errors on plots and the GUI was implemented with PyQt5.
+					</p>
+				</li>
+				<li>
+					<p>
+						<b><a href="https://github.com/RideTheSkyP/Team-project-MMO-RPG-Website">University website project</a>:</b> Team project. I created the backend. Used Django and hosted on Google Cloud Platform. Website hosted on Google App Engine and database on Google SQL database. Implemented login with Facebook. Using Trello to manage project tasks.
+					</p>
+				</li>
+				<li>
+					<p>
+						<b><a href="https://github.com/RideTheSkyP/Notify">Notify project</a>:</b> My current project (organizer) that is being developed in order to learn how to create beautiful and comfortable (user-friendly) applications for android, based on Google Material Design. I’ve used Kivy and KivyMD frameworks.
+					</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+		
+	<footer id="main-footer">
+		<section id="contact">
+			<h4>Contact</h4>
+			<div id="icons" class="flex-container">
+				<div><a href="mailto:mamedovvolodymyr@gmail.com">
+					<i class="material-icons">email</i></a></div>
+				<div><a target="_blank" href="https://github.com/RideTheSkyP/">
+					<img src="icons/GitHub120px.png" height="24" alt="github"></a></div>
+				<div><a target="_blank" href="https://www.linkedin.com/in/volodymyr-mamedov/">
+					<img src="icons/LinkedIn.svg" height="24" alt="linkedin"></a></div>
+			</div>
+		</section>
+		<small>
+			© Copyright 2021 Mamedov Volodymyr
+		</small>
+	</footer>
 </body>
