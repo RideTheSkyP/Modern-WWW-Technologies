@@ -2,9 +2,10 @@
 
 <html lang="en">
 <head>
-	<title>About me</title>
+	<title>Skills</title>
 	<link rel="stylesheet" href="css/index.css?v=1.0">
 	<link rel="stylesheet" href="css/sidenav.css?v=1.0">
+	<link rel="stylesheet" href="css/skills.css?v=1.0">
 	<script type="text/javascript" src="js/index.js"></script>.
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,36 +15,40 @@
 
 <body>
 	<div id="mySidenav" class="sidenav-container">
-		<span class="drawer-close-button">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		</span>
+		<a href="javascript:void(0)" onclick="closeNav()"><i class="material-icons">close</i></a>
 		<p>Mamedov Volodymyr</p>
-		<a href="base.html" id="home">Home</a>
-		<a href="about.html">About me</a>
-		<a href="skills.html">Skills</a>
-		<a href="experience.html">Experience & Projects</a>
-		<a href="education.html">Education & Cerifications</a>
-		<a href="#contact" onclick="closeNav()">Contact</a>
+		<a href="base.html" id="home"><i class="material-icons">home</i>Home</a>
+		<a href="about.html"><i class="material-icons">info</i>About me</a>
+		<a href="skills.html"><i class="material-icons">memory</i>Skills</a>
+		<a href="experience.html"><i class="material-icons">menu_book</i>Experience &<wbr> Projects</a>
+		<a href="education.html"><i class="material-icons">laptop</i>Education &<wbr> Certifications</a>
+		<a href="#contact" onclick="closeNav()"><i class="material-icons">phone</i>Contact</a>
 	</div>
 
 	<div class="backdrop-container" id="backdrop"></div>
 
-	<nav>
-		<span onclick="openNav()" class="mobile-nav-open-icon">&#9776;</span>
-	</nav>
+	<div class="sidebar">
+		<a href="#"><i class="material-icons" onclick="openNav()">menu</i></a>
+		<a href="base.html"><i class="material-icons">home</i></a>
+		<a href="about.html"><i class="material-icons">info</i></a>
+		<a href="skills.html"><i class="material-icons">memory</i></a>
+		<a href="experience.html"><i class="material-icons">menu_book</i></a>
+		<a href="education.html"><i class="material-icons">laptop</i></a>
+		<a href="#contact" onclick="closeNav()"><i class="material-icons">phone</i></a>
+	</div>
 
 	<main>
-		<h3>Skills</h3>
+		<header><h2>Skills</h2></header>
 		<div id="skills">
 			<ul>
-				<h4>Programing languages</h4>
+				<h4><p>Programing languages</p></h4>
 				<li><a href="#python">Python</a></li>
 				<li>Java</li>
 				<li>C</li>
 				<li>Bash</li>      
 			</ul>
 			<ul>
-				<h4>Tools</h4>
+				<h4><p>Tools</p></h4>
 				<li>Linux</li>
 				<li>Git</li>      
 				<li>SVN</li>
@@ -54,7 +59,7 @@
 				<li>VirtualBox</li>
 			</ul>
 			<ul>
-				<h4>Databases</h4>
+				<h4><p>Databases</p></h4>
 				<li>MySQL</li>
 				<li>PostgreSQL</li>
 				<li>MongoDB</li>
@@ -97,14 +102,14 @@
 
 	<footer id="main-footer">
 		<section id="contact">
-			<h4>Contact</h4>
+			<h4>Contact Me</h4>
 			<div id="icons" class="flex-container">
 				<div><a href="mailto:mamedovvolodymyr@gmail.com">
 					<i class="material-icons">email</i></a></div>
 				<div><a target="_blank" href="https://github.com/RideTheSkyP/">
-					<img src="icons/GitHub120px.png" height="24" alt="github"></a></div>
+					<img src="images/GitHub120px.png" height="24" alt="github"></a></div>
 				<div><a target="_blank" href="https://www.linkedin.com/in/volodymyr-mamedov/">
-					<img src="icons/LinkedIn.svg" height="24" alt="linkedin"></a></div>
+					<img src="images/LinkedIn.svg" height="24" alt="linkedin"></a></div>
 			</div>
 		</section>
 		<small>

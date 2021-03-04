@@ -38,19 +38,18 @@
 
 .sidebar a:hover 
 {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
 
-.main 
+main 
 {
-  margin-left: 50px;
-  padding: 0px 10px;
+    margin-left: 50px;
+    padding: 0px 10px;
 }
 
-.footer 
+footer 
 {
-  margin-left: 50px;
-  padding: 0px 10px;
+    text-align: right;
 }
 
 @media screen and (max-height: 450px) 
@@ -71,15 +70,6 @@ nav
     left: 0;
     background-color: white;
     z-index: 1;
-}
-
-.mobile-nav-open-icon
-{
-    font-size: 2rem;
-    cursor: pointer;
-    margin-right: 2rem;
-    color: black;
-    margin-left: 1rem;
 }
 
 .sidenav-container 
@@ -107,6 +97,12 @@ nav
     display: block;
     transition: 0.3s;
     margin: 10px 0;
+}
+
+.sidenav-container i
+{
+    font-size: 1.5rem;
+    vertical-align: middle;
 }
 
 .sidenav-container p

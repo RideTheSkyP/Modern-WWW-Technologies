@@ -2,10 +2,12 @@
 
 <html lang="en">
 <head>
-	<title>About me</title>
+	<title>Education</title>
 	<link rel="stylesheet" href="css/index.css?v=1.0">
 	<link rel="stylesheet" href="css/sidenav.css?v=1.0">
-	<script type="text/javascript" src="js/index.js"></script>.
+	<link rel="stylesheet" href="css/education.css?v=1.0">
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/equalizeDivHeight.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<meta charset="utf-8">
@@ -14,31 +16,36 @@
 
 <body>
 	<div id="mySidenav" class="sidenav-container">
-		<span class="drawer-close-button">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		</span>
+		<a href="javascript:void(0)" onclick="closeNav()"><i class="material-icons">close</i></a>
 		<p>Mamedov Volodymyr</p>
-		<a href="base.html" id="home">Home</a>
-		<a href="about.html">About me</a>
-		<a href="skills.html">Skills</a>
-		<a href="experience.html">Experience & Projects</a>
-		<a href="education.html">Education & Cerifications</a>
-		<a href="#contact" onclick="closeNav()">Contact</a>
+		<a href="base.html" id="home"><i class="material-icons">home</i>Home</a>
+		<a href="about.html"><i class="material-icons">info</i>About me</a>
+		<a href="skills.html"><i class="material-icons">memory</i>Skills</a>
+		<a href="experience.html"><i class="material-icons">menu_book</i>Experience &<wbr> Projects</a>
+		<a href="education.html"><i class="material-icons">laptop</i>Education &<wbr> Certifications</a>
+		<a href="#contact" onclick="closeNav()"><i class="material-icons">phone</i>Contact</a>
 	</div>
 
 	<div class="backdrop-container" id="backdrop"></div>
 
-	<nav>
-		<span onclick="openNav()" class="mobile-nav-open-icon">&#9776;</span>
-	</nav>
+	<div class="sidebar">
+		<a href="#"><i class="material-icons" onclick="openNav()" title="Menu">menu</i></a>
+		<a href="base.html"><i class="material-icons" title="Home">home</i></a>
+		<a href="about.html"><i class="material-icons" title="About Me">info</i></a>
+		<a href="skills.html"><i class="material-icons" title="Skills">memory</i></a>
+		<a href="experience.html"><i class="material-icons" title="Experience">menu_book</i></a>
+		<a href="education.html"><i class="material-icons" title="Education">laptop</i></a>
+		<a href="#contact" onclick="closeNav()"><i class="material-icons" title="Contact Me">phone</i></a>
+	</div>
 
 	<main>
-		<h3>Education</h3>
+		<header><h2>Education</h2></header>
 		<div id="education">
 			<p> Now I'm studying at <a href="http://pwr.edu.pl/en/">Wroclaw University of Science and Technology</a> at 3<sup>rd</sup> year, the Faculty of Fundamental Problems of Technology, department of Computer Science.</p>
 		</div>
-		<h4>Currently studying this courses:</h4>
-		<div id="coursesNow">
+		
+		<div id="coursesNow" class="coursesNow">
+			<h4><p>Currently studying this courses:<p></h4>
 			<ul>
 				<li>Embedded Systems</li>
 				<li>Modern WWW Technologies</li>
@@ -49,10 +56,10 @@
 			</ul>
 		</div>
 
-		<h4>Already passed:</h4>
-		<div id="coursesPassed">
-			<h5>5<sup>th</sup> semestr:</h5>
+		<h4><p>Already passed:</p></h4>
+		<div id="coursesPassed" class="flexContainer">
 			<div id="5th">
+				<h5>5<sup>th</sup> semestr:</h5>
 				<ul>
 					<li>Team Programming</li>
 					<li>Scientific Computing</li>
@@ -62,8 +69,9 @@
 				</ul>
 			</div>
 
-			<h5>4<sup>th</sup> semestr:</h5>
+			
 			<div id="4th">
+				<h5>4<sup>th</sup> semestr:</h5>
 				<ul>
 					<li>Algorithms and Data Structures</li>
 					<li>Network Technology</li>
@@ -75,8 +83,9 @@
 				</ul>
 			</div>
 
-			<h5>3<sup>th</sup> semestr:</h5>
+			
 			<div id="3rd">
+				<h5>3<sup>rd</sup> semestr:</h5>
 				<ul>
 					<li>Databases</li>
 					<li>Programming Technology</li>
@@ -85,8 +94,9 @@
 				</ul>
 			</div>
 
-			<h5>2<sup>th</sup> semestr:</h5>
+			
 			<div id="2nd">
+				<h5>2<sup>nd</sup> semestr:</h5>
 				<ul>
 					<li>Discrete Mathematics</li>
 					<li>Mathematical Analysis 2</li>
@@ -97,8 +107,9 @@
 				</ul>
 			</div>
 
-			<h5>1<sup>th</sup> semestr:</h5>
+			
 			<div id="1st">
+				<h5>1<sup>st</sup> semestr:</h5>
 				<ul>
 					<li>Introduction to Computer Science and Programming</li>
 					<li>Algebra with analytical geometry</li>
@@ -108,13 +119,13 @@
 			</div>
 		</div>
 
-		<h3>Certifications</h3>
+		<h3><p>Certifications</p></h3>
 		<div id="certifications">
-			<h5>Coursera:</h5>
+			<h4><p>Coursera:<p></h4>
 			<ul>
 				<li><a href="https://www.coursera.org/account/accomplishments/verify/XPAF5Y28LP8N">Crash Course on Python</a></li>
 			</ul>
-			<h5>Dataquest.io:</h5>
+			<h4><p>Dataquest.io:<p></h4>
 			<ul>
 				<li><a href="https://app.dataquest.io/view_cert/3ABKCFW051O4UUMPKIB1/">Deep Learning Fundamentals Course</a></li>
 				<li><a href="https://app.dataquest.io/view_cert/Y4UWY2FNW28LE40I2MW2/">Exploratory Data Visualization</a></li>
@@ -123,7 +134,7 @@
 			</ul>
 		</div>
 
-		<h3>Languages</h3>
+		<h3><p>Languages</p></h3>
 		<div id="languages">
 			<ul>
 				<li>Polish - Fluent(C1)</li>
@@ -137,14 +148,14 @@
 
 	<footer id="main-footer">
 		<section id="contact">
-			<h4>Contact</h4>
+			<h4 style="text-align: right;">Contact Me</h4>
 			<div id="icons" class="flex-container">
 				<div><a href="mailto:mamedovvolodymyr@gmail.com">
 					<i class="material-icons">email</i></a></div>
 				<div><a target="_blank" href="https://github.com/RideTheSkyP/">
-					<img src="icons/GitHub120px.png" height="24" alt="github"></a></div>
+					<img src="images/GitHub120px.png" height="24" alt="github"></a></div>
 				<div><a target="_blank" href="https://www.linkedin.com/in/volodymyr-mamedov/">
-					<img src="icons/LinkedIn.svg" height="24" alt="linkedin"></a></div>
+					<img src="images/LinkedIn.svg" height="24" alt="linkedin"></a></div>
 			</div>
 		</section>
 		<small>

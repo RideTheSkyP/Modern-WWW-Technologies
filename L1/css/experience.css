@@ -1,0 +1,32 @@
+body 
+{
+	background-image: url(../images/gameScreen44.png);
+	background-color: #cccccc;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50px 0px;
+	opacity: 1;
+}
+
+/*h2, p
+{
+	color: #c7ff29;
+}
+*/
+a
+{
+	color: #61f915;
+}
+/*
+p
+{
+	background-color: rgba(0, 50, 80, 0.4);
+
+}*/
+
+li
+{
+	margin-bottom: 50px;
+	background-color: rgba(186, 105, 255, 0.2);
+	border: dotted;
+}
