@@ -6,8 +6,7 @@
 	<link rel="stylesheet" href="css/index.css?v=1.0">
 	<link rel="stylesheet" href="css/sidenav.css?v=1.0">
 	<link rel="stylesheet" href="css/education.css?v=1.0">
-	<script type="text/javascript" src="js/index.js"></script>
-	<script type="text/javascript" src="js/equalizeDivHeight.js"></script>
+	<script src="js/index.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<meta charset="utf-8">
@@ -19,7 +18,6 @@
 		<a href="javascript:void(0)" onclick="closeNav()"><i class="material-icons">close</i></a>
 		<p>Mamedov Volodymyr</p>
 		<a href="base.html" id="home"><i class="material-icons">home</i>Home</a>
-		<a href="about.html"><i class="material-icons">info</i>About me</a>
 		<a href="skills.html"><i class="material-icons">memory</i>Skills</a>
 		<a href="experience.html"><i class="material-icons">menu_book</i>Experience &<wbr> Projects</a>
 		<a href="education.html"><i class="material-icons">laptop</i>Education &<wbr> Certifications</a>
@@ -31,21 +29,29 @@
 	<div class="sidebar">
 		<a href="#"><i class="material-icons" onclick="openNav()" title="Menu">menu</i></a>
 		<a href="base.html"><i class="material-icons" title="Home">home</i></a>
-		<a href="about.html"><i class="material-icons" title="About Me">info</i></a>
 		<a href="skills.html"><i class="material-icons" title="Skills">memory</i></a>
 		<a href="experience.html"><i class="material-icons" title="Experience">menu_book</i></a>
 		<a href="education.html"><i class="material-icons" title="Education">laptop</i></a>
 		<a href="#contact" onclick="closeNav()"><i class="material-icons" title="Contact Me">phone</i></a>
 	</div>
 
+	<div class="navbar">
+		<ul>
+			<li><a href="#coursesNow">Courses Now</a></li>
+			<li><a href="#coursesPassed">Already passed</a></li>
+			<li><a href="#certifications">Certifications</a></li>
+			<li><a href="#languages">Languages</a></li>
+		</ul>
+	</div>
+
 	<main>
 		<header><h2>Education</h2></header>
 		<div id="education">
-			<p> Now I'm studying at <a href="http://pwr.edu.pl/en/">Wroclaw University of Science and Technology</a> at 3<sup>rd</sup> year, the Faculty of Fundamental Problems of Technology, department of Computer Science.</p>
+			<p>Currently I'm studying at <a href="http://pwr.edu.pl/en/">Wroclaw University of Science and Technology</a> at 3<sup>rd</sup> year, the Faculty of Fundamental Problems of Technology, department of Computer Science.</p>
 		</div>
 		
 		<div id="coursesNow" class="coursesNow">
-			<h4><p>Currently studying this courses:<p></h4>
+			<h4><p>Now studying this courses<p></h4>
 			<ul>
 				<li>Embedded Systems</li>
 				<li>Modern WWW Technologies</li>
@@ -59,7 +65,7 @@
 		<h4><p>Already passed:</p></h4>
 		<div id="coursesPassed" class="flexContainer">
 			<div id="5th">
-				<h5>5<sup>th</sup> semestr:</h5>
+				<h5>5<sup>th</sup> semestr</h5>
 				<ul>
 					<li>Team Programming</li>
 					<li>Scientific Computing</li>
@@ -71,7 +77,7 @@
 
 			
 			<div id="4th">
-				<h5>4<sup>th</sup> semestr:</h5>
+				<h5>4<sup>th</sup> semestr</h5>
 				<ul>
 					<li>Algorithms and Data Structures</li>
 					<li>Network Technology</li>
@@ -85,7 +91,7 @@
 
 			
 			<div id="3rd">
-				<h5>3<sup>rd</sup> semestr:</h5>
+				<h5>3<sup>rd</sup> semestr</h5>
 				<ul>
 					<li>Databases</li>
 					<li>Programming Technology</li>
@@ -96,7 +102,7 @@
 
 			
 			<div id="2nd">
-				<h5>2<sup>nd</sup> semestr:</h5>
+				<h5>2<sup>nd</sup> semestr</h5>
 				<ul>
 					<li>Discrete Mathematics</li>
 					<li>Mathematical Analysis 2</li>
@@ -109,7 +115,7 @@
 
 			
 			<div id="1st">
-				<h5>1<sup>st</sup> semestr:</h5>
+				<h5>1<sup>st</sup> semestr</h5>
 				<ul>
 					<li>Introduction to Computer Science and Programming</li>
 					<li>Algebra with analytical geometry</li>
@@ -139,7 +145,7 @@
 			<ul>
 				<li>Polish - Fluent(C1)</li>
 				<li>English - Proficient(B2-C1)</li>
-				<li>German - Beginner(&ltA1)</li>
+				<li>German - Beginner(&lt;A1)</li>
 				<li>Ukranian - Native</li>
 				<li>Russian - Native</li>
 			</ul>

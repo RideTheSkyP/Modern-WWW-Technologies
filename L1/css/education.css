@@ -4,6 +4,7 @@ body
 	background-color: #cccccc;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-position: 50px 0px;
 	color: white;
 }
@@ -11,50 +12,69 @@ body
 header
 {
 	text-align: center;
-}	
+}
 
 header h2
 {
-	background-color: rgba(0, 50, 80, 0.75);
+	background-color: rgba(0, 50, 80, 1);
 	display: inline-block;
+	border: double;
+	border-width: 5px;
+	padding: 10px;
 }
 
-h3
+main h3
 {
 	font-size: 2vw;
 	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
-h4
+main h3 p
+{
+	display: inline-block;
+	border: double;
+	border-width: 5px;
+	padding: 5px;
+}
+
+main h4
 {
 	text-align: center;
 	font-size: 1vw;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
-p
+main p
 {
 	text-align: center;
-	background-color: rgba(0, 50, 80, 0.75);
+	background-color: rgba(0, 50, 80, 0.85);
 	display: inline-block;
 	padding: 5px;
 }
 
-div ul
+main div ul
 {
 	background-color: rgba(0, 50, 80, 0.75);
 	display: inline-block;
 	border-style: dashed;
 	padding: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
-div a
+main div a
 {
 	color: rgba(157, 209, 70, 1)
 }
 
-div
+main div
 {
 	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 div.coursesNow ul
@@ -95,3 +115,52 @@ div.flexContainer ul
     font-size: 1vw;
 }
 
+main li
+{
+	list-style-type: none;
+}
+
+.navbar
+{
+	/*margin-left: 42px;*/
+	width:100%;
+	top: 0;
+	overflow-x: hidden;
+	padding-top: 0px;
+	position: fixed;
+	float: left;
+}
+
+.navbar ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    /*float: left;*/
+}
+
+.navbar li 
+{
+    float: right;
+    margin-right: 1%;
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar a
+{
+	/*float: left;*/
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 5px 15px;
+	text-decoration: none;
+}
+
+.navbar a:hover 
+{
+	background: #ddd;
+	color: black;
+}

@@ -1,42 +1,36 @@
 body 
 {
-	background-image: url(../images/dino3.png);
+	background-image: url(../images/mnt.jpg);
 	background-color: #cccccc;
-	/*background-size: all;*/
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: 50px 0px;
-	color: white;
+	background-position: 50px 33px;
+	opacity: 1;
 	font-size: 1vw;
 }
 
-#skills h4
+main div
 {
-	font-size: 1.5vw;
+	text-align: center;
 }
 
-#skills li
+main div p
 {
-	border: solid;
+
+	background-color: rgba(41, 67, 106, 0.4);
+	color: white;
 	display: inline-block;
+	border: dotted;
 	padding: 10px;
-	margin: 10px;
 }
 
-#python li
+main div h3
 {
-	border: solid;
-	display: inline-block;
-	padding: 10px;
-	margin: 10px;
-}
-
-main a
-{
-	/*font-size: 2vw;
-	transition: all 2s ease-out;*/
-	transition: 4s;
-	transform-style: preserve-3d;
+	/*display: inline-block;*/
+	color: black;
+	/*background-color: rgba(41, 67, 106, 0.4);*/
+	/*border: double;*/
 }
 
 .navbar

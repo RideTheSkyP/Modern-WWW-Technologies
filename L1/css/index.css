@@ -1,3 +1,9 @@
+html 
+{
+	scroll-behavior: smooth;
+	/*top: 50;*/
+}
+
 .flex-container
 {
     display: inline-flex;
@@ -8,6 +14,6 @@
 h2
 {
     text-align: center;
-    margin-top: 0px;
+    margin-top: 30px;
     font-size: 2.5vw;
 }
