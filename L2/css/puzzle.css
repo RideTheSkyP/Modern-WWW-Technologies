@@ -1,8 +1,14 @@
+* 
+{
+	font-family: Arial;
+	box-sizing: border-box;
+}
+
 canvas
 {
 	border: solid;
 	border-color: black;
 	border-width: 1px;
-/*	background-color: white;
-    opacity: .4;*/
+	background-color: red;
 }
+

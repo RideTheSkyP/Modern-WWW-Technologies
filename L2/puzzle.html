@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Puzzle game</title>
-		<link rel="stylesheet" href="css/puzzle.css?v=1.0">
-		<script src="js/puzzle.js"></script>
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Sliding Puzzle</title>
+        <link rel="stylesheet" href="css/puzzle.css?v=1.0">
+    </head>
+    <body>
+        <div id="title">
+            <h2>Sliding Puzzle</h2>
+        </div>
 
-	<body onload="init();">
-		<canvas id="field"></canvas>
-	</body>
+        <div id="slider">
+            <form>
+                <label>Easy</label>
+                <input type="range" id="scale" value="4" min="3" max="6" step="1">
+                <label>Hard</label>
+            </form>
+            <br>
+        </div>
+
+        <div id="main" class="main">
+            <canvas id="puzzle" width="720px" height="720px"></canvas>
+        </div>
+        
+        <script src="js/puzzle.js"></script>
+    </body>
 </html>
