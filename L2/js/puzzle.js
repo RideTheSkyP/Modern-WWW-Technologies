@@ -1,7 +1,15 @@
 var context = document.getElementById("puzzle").getContext("2d");
 
 var img = new Image();
-img.src = "resources/img1.jpg";
+img.src = "resources/img4.jpg";
+
+function setImage(imgStr)
+{
+	img.src = "resources/" + imgStr
+	setBoard();
+	drawTiles();
+}
+
 img.addEventListener("load", drawTiles, false);
 
 var boardSize = document.getElementById("puzzle").width;
