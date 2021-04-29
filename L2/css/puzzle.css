@@ -2,6 +2,14 @@
 {
 	font-family: Arial;
 	box-sizing: border-box;
+	background-color: #151515;
+    color: #b4a5a5;
+}
+
+#title
+{
+    align-content: center;
+    background-color: white;
 }
 
 canvas
@@ -12,14 +20,22 @@ canvas
 	background-color: red;
 }
 
+#slider
+{
+    float: left;
+    margin-left: 5vw;
+    margin-right: 23vw;
+}
+
 /* Dropdown Button */
 .dropbtn 
 {
-    background-color: #4CAF50;
+    background-color: #301b3f;;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
+    float: right;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -34,19 +50,21 @@ canvas
 {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+
 }
 
 /* Links inside the dropdown */
 .dropdown-content a 
 {
-    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    color: #b4a5a5;
+    background-color: #3c415c;
 }
 
 /* Change color of dropdown links on hover */
@@ -65,16 +83,4 @@ canvas
 .dropdown:hover .dropbtn
 {
 	background-color: #3e8e41;
-}
-
-#slider
-{
-	float: left;
-    margin-right: 10vw;
-}
-
-#dropdown
-{
-	float: right;
-    margin-right: 10vw;
 }
