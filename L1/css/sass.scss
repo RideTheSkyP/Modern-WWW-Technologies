@@ -1,0 +1,488 @@
+/* Define standard variables and values for website */
+$bgcolor: #cccccc;
+$textcolor: darkblue;
+$fontsize: 1vw;
+$headerFontSize: 2.5vw;
+$textAlign: center;
+$scrollBehavior: smooth;
+$navbarWidth: 100%;
+$paddingZero: 0;
+$transitionTime: 0.3s;
+$sidenavColor: #818181;
+$sidenavHoverColor: #f1f1f1;
+$display: flex;
+$displayIB: inline-block;
+$borderDot: dotted;
+$backgroundSize: cover;
+
+@function set-backcolor($back) 
+{
+    @if $back == 0 
+    {
+      @return url(../images/mnt.jpg);
+    }
+    @else if $back == 1
+    {
+      @return url(../images/dino3.png);
+    }
+    @else if $back == 2
+    {
+      @return url(../images/gameScreen44.png);
+    }
+    @else if $back == 3
+    {
+      @return url(../images/wr1.jpg);
+    }
+}
+
+html 
+{
+	scroll-behavior: $scrollBehavior;
+}
+
+body 
+{
+	color: $textcolor;
+    background-color: $bgcolor;
+    background-size: $backgroundSize;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50px 33px;
+    opacity: 1;
+    font-size: $fontsize;
+}
+
+h2
+{
+    text-align: $textAlign;
+    margin-top: 30px;
+    font-size: $headerFontSize;
+}
+
+.flex-container
+{
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/*home*/
+#home 
+{
+	background-image: set-backcolor(0);
+	background-color: $bgcolor;
+	background-size: $backgroundSize;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50px 33px;
+	opacity: 1;
+	font-size: $fontsize;
+}
+
+#home main div
+{
+	text-align: $textAlign;
+}
+
+#home main div p
+{
+
+	background-color: rgba(41, 67, 106, 0.4);
+	color: white;
+	display: $displayIB;
+	border: $borderDot;
+	padding: 10px;
+}
+
+#home main div h3
+{
+	color: black;
+}
+
+/*skills*/
+.skillsBody
+{
+    background-image: set-backcolor(1);
+}
+
+.skillsBody #skills h4
+{
+    font-size: 1.5vw;
+}
+
+.skillsBody #skills li
+{
+    border: solid;
+    display: $displayIB;
+    padding: 10px;
+    margin: 10px;
+}
+
+.skillsBody #python li
+{
+    border: solid;
+    display: $displayIB;
+    padding: 10px;
+    margin: 10px;
+}
+
+.skillsBody main a
+{
+    transition: 4s;
+    transform-style: preserve-3d;
+}
+
+
+/*experience*/
+.experienceBody
+{
+    background-image: set-backcolor(2);
+}
+
+.experienceBody  main a
+{
+    color: $textcolor;
+}
+
+.experienceBody  main li
+{
+    list-style-type: none;
+    margin-bottom: 50px;
+    background-color: rgba(186, 155, 255, 0.5);
+    border: dotted;
+}
+
+.experienceBody code
+{
+    background: rgba(200, 155, 255, 0.75);
+    border-radius: 4px;
+    font-family: "Courier New", monospace;
+    font-size: 0.9rem;
+    margin: 0 0.25rem;
+    padding: 0.25rem 0.65rem;
+    border: double;
+}
+
+.experienceBody  pre
+{
+    font-family: "Courier New", monospace;
+    font-size: 0.9rem;
+    margin: 0 0 2rem 0;
+}
+
+.experienceBody  div p
+{
+    font-size: 1.5vw;
+    color: blue;
+    text-align: center;
+}
+
+.experienceBody pre code
+{
+    display: $displayIB;
+    line-height: 1.75;
+    padding: 1rem 1.5rem;
+    overflow-x: auto;
+}
+
+/*education*/
+.educationBody 
+{
+    background-image: set-backcolor(3);
+}
+
+.educationBody header
+{
+    text-align: $textAlign;
+}
+
+.educationBody header h2
+{
+    background-color: rgba(0, 50, 80, 1);
+    display: $displayIB;
+    border: double;
+    border-width: 5px;
+    padding: 10px;
+}
+
+.educationBody main h3
+{
+    font-size: 2vw;
+    text-align: $textAlign;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.educationBody main h3 p
+{
+    display: $displayIB;
+    border: double;
+    border-width: 5px;
+    padding: 5px;
+}
+
+.educationBody main h4
+{
+    text-align: $textAlign;
+    font-size: $fontsize;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.educationBody main p
+{
+    text-align: $textAlign;
+    background-color: rgba(0, 50, 80, 0.85);
+    display: $displayIB;
+    padding: 5px;
+}
+
+.educationBody main div ul
+{
+    background-color: rgba(0, 50, 80, 0.75);
+    display: $displayIB;
+    border-style: dashed;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.educationBody main div a
+{
+    color: rgba(157, 209, 70, 1)
+}
+
+.educationBody main div
+{
+    text-align: $textAlign;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.educationBody div.coursesNow ul
+{
+    background-color: rgba(0, 50, 80, 0.75);
+    text-align: $textAlign;
+    display: $displayIB;
+    border-style: solid;
+    padding: 30px;
+}
+
+.educationBody div.flexContainer
+{
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+}
+
+.educationBody div.flexContainer div
+{
+    background-color: rgba(0, 50, 80, 0.75);
+    border-style: solid;
+    text-align: $textAlign;
+    padding: 14px;
+
+}
+
+.educationBody div.flexContainer h5
+{
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.educationBody div.flexContainer ul
+{
+    margin-top: 10px;
+    font-size: $fontsize;
+}
+
+.educationBody main li
+{
+    list-style-type: none;
+}
+
+/*navbar*/
+.navbar
+{
+	width:$navbarWidth;
+	top: $paddingZero;
+	overflow-x: hidden;
+	padding-top: 0px;
+	position: fixed;
+}
+
+.navbar ul
+{
+    list-style-type: none;
+    margin: $paddingZero;
+    padding: $paddingZero;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li 
+{
+    float: right;
+    margin-right: 1%;
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar a
+{
+	float: left;
+	display: block;
+	color: white;
+	text-align: $textAlign;
+	padding: 5px 15px;
+	text-decoration: none;
+
+    &:hover 
+    {
+        background: #ddd;
+        color: black;
+    }
+}
+
+
+/*sidenav*/
+.backdrop-container
+{
+    display: none;
+    position: fixed;
+    z-index: 2; 
+    left: $paddingZero;
+    top: $paddingZero;
+    width: $navbarWidth; 
+    height: $navbarWidth; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);  
+    -webkit-animation: fadeIn 1.2s ease-in-out;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.sidebar 
+{
+  height: $navbarWidth;
+  width: 50px;
+  position: fixed;
+  z-index: 1;
+  top: $paddingZero;
+  left: $paddingZero;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a, span
+{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover 
+{
+    color: $sidenavHoverColor;
+}
+
+main 
+{
+    margin-left: 50px;
+    padding: 0px 10px;
+}
+
+footer 
+{
+    text-align: right;
+}
+
+@media screen and (max-height: 450px) 
+{
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+nav
+{
+    width: $navbarWidth;
+    height: 10vh;
+    display: $display;
+    justify-content: space-between;
+    align-items: $textAlign;
+    position: fixed;
+    top: $paddingZero;
+    left: $paddingZero;
+    background-color: white;
+    z-index: 1;
+}
+
+.sidenav-container 
+{
+    height: $navbarWidth;
+    width: $paddingZero;
+    position: fixed;
+    z-index: 3;
+    top: $paddingZero;
+    left: $paddingZero;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: $transitionTime;
+    padding-top: 10px;
+    display: $display;
+    flex-direction: column;
+    align-items: $textAlign;
+}
+
+.sidenav-container a 
+{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #818181;
+    display: block;
+    transition: $transitionTime;
+    margin: 10px $paddingZero;
+
+    &:hover 
+    {
+        color: $sidenavHoverColor;
+    }
+}
+
+.sidenav-container i
+{
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.sidenav-container p
+{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #BAB7D9;
+    display: block;
+    transition: $transitionTime;
+    margin: 10px $paddingZero;
+}
+
+.sidenav-container .closebtn 
+{
+    font-size: 3rem;
+    font-weight: 700;
+    color:#C9002B ;
+    padding-right: 1rem;
+} 
+
+.sidenav-container .drawer-close-button
+{
+    height: 3rem;
+    width: $navbarWidth;
+    display: $display;
+    justify-content: flex-end;
+    align-items: $textAlign;
+    margin-bottom: 3rem;
+}
