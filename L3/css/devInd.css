@@ -1,0 +1,337 @@
+/* Define standard variables and values for website */
+html {
+  scroll-behavior: smooth; }
+
+body {
+  color: darkblue;
+  background-color: #cccccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50px 33px;
+  opacity: 1;
+  font-size: 1vw; }
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2.5vw; }
+
+.flex-container {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+
+/*home*/
+#home {
+  background-image: url(../images/mnt.jpg);
+  background-color: #cccccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50px 33px;
+  opacity: 1;
+  font-size: 1vw; }
+
+#home main div {
+  text-align: center; }
+
+#home main div p {
+  background-color: rgba(41, 67, 106, 0.4);
+  color: white;
+  display: inline-block;
+  border: dotted;
+  padding: 10px; }
+
+#home main div h3 {
+  color: black; }
+
+/*skills*/
+.skillsBody {
+  background-image: url(../images/dino3.png); }
+
+.skillsBody #skills h4 {
+  font-size: 1.5vw; }
+
+.skillsBody #skills li {
+  border: solid;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px; }
+
+.skillsBody #python li {
+  border: solid;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px; }
+
+.skillsBody main a {
+  transition: 4s;
+  transform-style: preserve-3d; }
+
+/*experience*/
+.experienceBody {
+  background-image: url(../images/gameScreen44.png); }
+
+.experienceBody main a {
+  color: darkblue; }
+
+.experienceBody main li {
+  list-style-type: none;
+  margin-bottom: 50px;
+  background-color: rgba(186, 155, 255, 0.5);
+  border: dotted; }
+
+.experienceBody code {
+  background: rgba(200, 155, 255, 0.75);
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  margin: 0 0.25rem;
+  padding: 0.25rem 0.65rem;
+  border: double; }
+
+.experienceBody pre {
+  font-family: "Courier New", monospace;
+  font-size: 0.9rem;
+  margin: 0 0 2rem 0; }
+
+.experienceBody div p {
+  font-size: 1.5vw;
+  color: blue;
+  text-align: center; }
+
+.experienceBody pre code {
+  display: inline-block;
+  line-height: 1.75;
+  padding: 1rem 1.5rem;
+  overflow-x: auto; }
+
+/*education*/
+.educationBody {
+  background-image: url(../images/wr1.jpg); 
+  color: white}
+
+.educationBody header {
+  text-align: center; }
+
+.educationBody header h2 {
+  background-color: #003250;
+  display: inline-block;
+  border: double;
+  border-width: 5px;
+  padding: 10px; }
+
+.educationBody main h3 {
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.educationBody main h3 p {
+  display: inline-block;
+  border: double;
+  border-width: 5px;
+  padding: 5px; }
+
+.educationBody main h4 {
+  text-align: center;
+  font-size: 1vw;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.educationBody main p {
+  text-align: center;
+  background-color: rgba(0, 50, 80, 0.85);
+  display: inline-block;
+  padding: 5px; }
+
+.educationBody main div ul {
+  background-color: rgba(0, 50, 80, 0.75);
+  display: inline-block;
+  border-style: dashed;
+  padding: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.educationBody main div a {
+  color: #9dd146; }
+
+.educationBody main div {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.educationBody div.coursesNow ul {
+  background-color: rgba(0, 50, 80, 0.75);
+  text-align: center;
+  display: inline-block;
+  border-style: solid;
+  padding: 30px; }
+
+.educationBody div.flexContainer {
+  overflow: auto;
+  white-space: nowrap;
+  display: flex; }
+
+.educationBody div.flexContainer div {
+  background-color: rgba(0, 50, 80, 0.75);
+  border-style: solid;
+  text-align: center;
+  padding: 14px; }
+
+.educationBody div.flexContainer h5 {
+  font-size: 1.5vw;
+  margin-bottom: 10px;
+  margin-top: 0px; }
+
+.educationBody div.flexContainer ul {
+  margin-top: 10px;
+  font-size: 1vw; }
+
+.educationBody main li {
+  list-style-type: none; }
+
+/*navbar*/
+.navbar {
+  width: 100%;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 0px;
+  position: fixed; }
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; }
+
+.navbar li {
+  float: right;
+  margin-right: 1%;
+  border: solid;
+  border-color: rgba(255, 255, 255, 0.5); }
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 15px;
+  text-decoration: none; }
+  .navbar a:hover {
+    background: #ddd;
+    color: black; }
+
+/*sidenav*/
+.backdrop-container {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-animation: fadeIn 1.2s ease-in-out;
+  animation: fadeIn 1.2s ease-in-out; }
+
+.sidebar {
+  height: 100%;
+  width: 50px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px; }
+
+.sidebar a, span {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block; }
+
+.sidebar a:hover {
+  color: #f1f1f1; }
+
+main {
+  margin-left: 50px;
+  padding: 0px 10px; }
+
+footer {
+  text-align: right; }
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px; }
+
+  .sidebar a {
+    font-size: 18px; } }
+nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1; }
+
+.sidenav-container {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.sidenav-container a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin: 10px 0; }
+  .sidenav-container a:hover {
+    color: #f1f1f1; }
+
+.sidenav-container i {
+  font-size: 1.5rem;
+  vertical-align: middle; }
+
+.sidenav-container p {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #BAB7D9;
+  display: block;
+  transition: 0.3s;
+  margin: 10px 0; }
+
+.sidenav-container .closebtn {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #C9002B;
+  padding-right: 1rem; }
+
+.sidenav-container .drawer-close-button {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 3rem; }

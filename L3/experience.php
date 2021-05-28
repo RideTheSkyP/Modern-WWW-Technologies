@@ -1,0 +1,124 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<title>Experience</title>
+	<link rel="stylesheet" href="css/index.css?v=1.0">
+	<script src="js/index.js"></script>.
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="experienceBody">
+	<?php include "php/sidenav.php";?>
+
+	<?php include "php/sidebar.php";?>
+
+	<div class="navbar">
+		<ul>
+			<li><a href="#ddb">Discord-DreamBot</a></li>
+			<li><a href="#pda">Pneumonia-Detector app</a></li>
+			<li><a href="#web">Website</a></li>
+			<li><a href="#not">Notify</a></li>
+		</ul>
+	</div>
+
+	<main>
+		<section id="experience">
+			<header><h2>Experience & Projects</h2></header>
+			<ul>
+				<li>
+					<p id="ddb">
+						<b><a href="https://github.com/RideTheSkyP/Discord-DreamBot">Discord-DreamBot</a>:</b> Music bot for discord, implemented with asynchronous discord python API. For this project I used video/audio codec ffmpeg for video-to-audio transformation in best quality. Bot is deployed and hosted on <b>heroku</b> server. Also created <b>MySQL</b> database to store users playlists, hosted on heroku too.
+					</p>
+				</li>
+				<li>
+					<p id="pda">
+						<b><a href="https://github.com/RideTheSkyP/Pneumonia-Detect">Pneumonia-Detector app</a>:</b> Team project. GUI application for pneumonia recognition by chest x-ray images using machine learning. The following technologies used for this app: <b>Keras</b> + <b>TensorFlow</b> for different models designs (chosen were 5 top scored models to achieve the best possible and true result, models trained and tested in <b>Google Colab</b>), <b>Pillow</b> + <b>OpenCV</b> for image recognition, <b>NumPy</b> for image-to-matrix transformations, <b>h5py</b> to store all matrices with labels taking up as little space as possible, <b>Matplotlib</b> + <b>Seaborn</b> to show accuracy and errors on plots and the GUI was implemented with <b>PyQt5</b>.
+					</p>
+				</li>
+				<li>
+					<p id="web">
+						<b><a href="https://github.com/RideTheSkyP/Team-project-MMO-RPG-Website">University website project</a>:</b> Team project. I created the backend. Used <b>Django</b> and hosted on <b>Google Cloud Platform</b>. Website hosted on Google App Engine and database on Google SQL database. Implemented login with Facebook. Using <b>Trello</b> to manage project tasks.
+					</p>
+				</li>
+				<li>
+					<p id="not">
+						<b><a href="https://github.com/RideTheSkyP/Notify">Notify project</a>:</b> My current project (organizer) that is being developed in order to learn how to create beautiful and comfortable (user-friendly) applications for android, based on Google Material Design. I’ve used <b>Kivy</b> and <b>KivyMD</b> frameworks.
+					</p>
+				</li>
+			</ul>
+
+			<div>
+				<p>The fragment of code, a* path finding algorithm</p>
+				<pre>
+					<code>
+					def aStar(maze, start, end):
+					    startNode = Node(None, start)
+					    startNode.f = startNode.g = startNode.h = 0
+					    endNode = Node(None, end)
+					    endNode.f = endNode.g = endNode.h = 0
+					    openList = []
+					    closedList = []
+					    openList.append(startNode)
+
+					    while len(openList) > 0:
+					        currentNode = openList[0]
+					        currentNodeIndex = 0
+					        for index, node in enumerate(openList):
+					            if node.f < currentNode.f:
+					                currentNode = node
+					                currentNodeIndex = index
+
+					        openList.pop(currentNodeIndex)
+					        closedList.append(currentNode)
+
+					        if currentNode == endNode:
+					            path = []
+					            current = currentNode
+					            while current is not None:
+					                path.append(current.position)
+					                current = current.parent
+					            return path[::-1]
+
+					        children = []
+					        directions = [(0, -1), (0, 1), (-1, 0), (1, 0), (-1, 1), (1, -1), (-1, -1), (1, 1)]
+					        for newPosition in directions:
+					            nodePosition = (currentNode.position[0] + newPosition[0], currentNode.position[1] + newPosition[1])
+
+					            if (len(maze)) < nodePosition[0] < 0 or (len(maze[0])) < nodePosition[1] < 0:
+					                continue
+
+					            if maze[nodePosition[0]][nodePosition[1]] is "#":
+					                continue
+
+					            newNode = Node(currentNode, nodePosition)
+
+					            children.append(newNode)
+
+					        for child in children:
+					            for closedChild in closedList:
+					                if child is closedChild:
+					                    continue
+
+					            child.g = currentNode.g + 1
+					            child.h = distance(child, endNode)
+					            child.f = child.g + child.h
+
+					            for openNode in openList:
+					                if child is openNode and child.g > openNode.g:
+					                    continue
+
+					            openList.append(child)
+					</code>
+				</pre> 
+			</div>
+
+			<a href="#website"><p style="text-align: right;">Screenshot taken from our sign up page of website project</p></a>
+		</section>
+	</main>
+
+	<?php include "php/footer.php";?>
+</body>
